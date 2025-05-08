@@ -3,6 +3,8 @@
  */
 package ifsc.poo;
 
+// lembrar: Faça comentários nas classes para explicar o que os métodos fazem e o que os atributos significam.
+
 public class App {
     public static void main(String[] args) {
 
