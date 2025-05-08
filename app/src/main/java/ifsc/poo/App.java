@@ -5,8 +5,19 @@ package ifsc.poo;
 
 // lembrar: Faça comentários nas classes para explicar o que os métodos fazem e o que os atributos significam.
 
+import edu.princeton.cs.algs4.Draw;
+
+import java.awt.*;
+
 public class App {
     public static void main(String[] args) {
+        Draw draw = new Draw();
+        Grade grade = new Grade(draw);
+
+        grade.desenharGrade();
+
+
+
 
     }
 }
