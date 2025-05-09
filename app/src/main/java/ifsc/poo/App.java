@@ -11,24 +11,23 @@ import java.awt.*;
 public class App {
     private Draw draw;
 
-    public App(Draw draw) {
+    public App() {
         this.draw = new Draw();
         this.draw.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
         this.draw.setCanvasSize(1000, 600);
         this.draw.setXscale(0, 1000);
         this.draw.setYscale(0, 600);
-        this.draw.filledSquare(0, 0, 20);
-//        this.draw.square(0, 0, 2);
-
-        // Ajusta o tamanho da tela usando algum método do objeto Draw
-        // Ajusta a escala X usando algum outro método do objeto Draw
-        // Ajusta a escala Y usando ainda outro método do objeto Draw
+        this.draw.filledSquare(0, 20, 650);
+        //this.draw.square(0, 0, 2);
     }
 
+    // main
     public static void main(String[] args) {
-        Draw draw = new Draw();
-        Grade tabuleiro = new Grade(draw);
-        tabuleiro.desenharGrade(draw);
+        App app = new App();
+        app.draw.show();
+//        Grade tabuleiro = new Grade(draw);
+//        tabuleiro.desenharGrade(draw);
+//        draw.show();
 
     }
 }
