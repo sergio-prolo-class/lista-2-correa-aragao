@@ -17,14 +17,15 @@ public class App {
         this.draw.setCanvasSize(1000, 600);
         this.draw.setXscale(0, 1000);
         this.draw.setYscale(0, 600);
-        this.draw.filledSquare(0, 20, 650);
-        //this.draw.square(0, 0, 2);
+
     }
 
     // main
     public static void main(String[] args) {
         App app = new App();
         app.draw.show();
+        Grade grade = new Grade(app.draw);
+        grade.desenharGrade(app.draw);
 //        Grade tabuleiro = new Grade(draw);
 //        tabuleiro.desenharGrade(draw);
 //        draw.show();

@@ -29,8 +29,8 @@ public class Grade {
 
     public void desenharGrade(Draw draw){
         draw.setPenColor(Color.RED); // dimensoes do tabuleiro
-        for (int i = 0; i <= posicao; i++) {
-            for (int j = 0; j <= posicao; j++) {
+        for (int i = 0; i <= largura; i++) {
+            for (int j = 0; j <= altura; j++) {
                 if ((i + j) % 2 == 0) {
                     draw.setPenColor(new Color(255, 255, 255));
                 } else {
