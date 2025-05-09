@@ -6,24 +6,29 @@ package ifsc.poo;
 // lembrar: Faça comentários nas classes para explicar o que os métodos fazem e o que os atributos significam.
 
 import edu.princeton.cs.algs4.Draw;
-
 import java.awt.*;
 
 public class App {
-    Draw draw = new Draw();
-    Grade grade = new Grade(draw);
+    private Draw draw;
 
-    public App(Draw draw, Grade grade) {
-        this.draw = draw;
-        this.grade = grade;
+    public App(Draw draw) {
+        this.draw = new Draw();
+        this.draw.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
+        this.draw.setCanvasSize(1000, 600);
+        this.draw.setXscale(0, 1000);
+        this.draw.setYscale(0, 600);
+        this.draw.filledSquare(0, 0, 20);
+//        this.draw.square(0, 0, 2);
+
+        // Ajusta o tamanho da tela usando algum método do objeto Draw
+        // Ajusta a escala X usando algum outro método do objeto Draw
+        // Ajusta a escala Y usando ainda outro método do objeto Draw
     }
 
     public static void main(String[] args) {
-//        Grade grade = new Grade(new Draw());
-//
-//        grade.desenharGrade();
-
-
+        Draw draw = new Draw();
+        Grade tabuleiro = new Grade(draw);
+        tabuleiro.desenharGrade(draw);
 
     }
 }
