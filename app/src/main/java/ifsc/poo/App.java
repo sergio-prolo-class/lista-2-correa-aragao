@@ -10,12 +10,18 @@ import edu.princeton.cs.algs4.Draw;
 import java.awt.*;
 
 public class App {
+    Draw draw = new Draw();
+    Grade grade = new Grade(draw);
+
+    public App(Draw draw, Grade grade) {
+        this.draw = draw;
+        this.grade = grade;
+    }
+
     public static void main(String[] args) {
-        Draw draw = new Draw();
-        Grade grade = new Grade(draw);
-
-        grade.desenharGrade();
-
+//        Grade grade = new Grade(new Draw());
+//
+//        grade.desenharGrade();
 
 
 

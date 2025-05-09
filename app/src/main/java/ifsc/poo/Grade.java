@@ -28,14 +28,14 @@ public class Grade {
     public void desenharGrade() {
         Color roxo = new Color(109, 50, 160);
         Color branco = new Color(255, 255, 255);
-        this.desenho.setPenColor(branco);
-        this.desenho.setCanvasSize(1000, 600);
-        this.desenho.setScale(0, 10);
-        //this.desenho.setXscale(0, 1000);
-        //this.desenho.setYscale(0, 600);
-        this.desenho.filledSquare(0, 0, 20);
-        this.desenho.setPenColor(roxo);
-        this.desenho.square(0, 0, 2);
+//        this.desenho.setPenColor(branco);
+//        this.desenho.setCanvasSize(1000, 600);
+//        this.desenho.setScale(0, 10);
+//        this.desenho.setXscale(0, 1000);
+//        this.desenho.setYscale(0, 600);
+//        this.desenho.filledSquare(0, 0, 20);
+//        this.desenho.setPenColor(roxo);
+//        this.desenho.square(0, 0, 2);
 
     }
 
