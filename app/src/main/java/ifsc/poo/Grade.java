@@ -28,16 +28,15 @@ public class Grade {
     }
 
     public void desenharGrade(Draw draw){
-        draw.setPenColor(Color.RED); // dimensoes do tabuleiro
-        for (int i = 0; i <= largura; i++) {
-            for (int j = 0; j <= altura; j++) {
-                if ((i + j) % 2 == 0) {
-                    draw.setPenColor(new Color(255, 255, 255));
-                } else {
-                    draw.setPenColor(new Color(138, 43, 226));
-                }
-                draw.filledSquare(i + 0.5, j + 0.5, 0.5);
-            }
+        // desenhando todas as linhas e depois todas as colunas
+        // adicionar os rotulos (criando outro metodo
+        for (int i = 0; i < largura; i++) {
+            draw.setPenColor(Color.black);
+            draw.line(60.0, tamanhoCelula * i + 60.0, altura * tamanhoCelula, tamanhoCelula * i + 60.0); // criando as linhas
+        }
+        for (int i = 0; i < altura; i++) {
+            draw.setPenColor(Color.black);
+            draw.line(tamanhoCelula * i + 60.0, tamanhoCelula * i, largura * tamanhoCelula,tamanhoCelula * i );
         }
     }
 
