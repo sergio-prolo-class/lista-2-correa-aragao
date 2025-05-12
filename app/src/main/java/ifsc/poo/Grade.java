@@ -36,7 +36,7 @@ public class Grade {
         }
         for (int i = 0; i < altura; i++) {
             draw.setPenColor(Color.black);
-            draw.line(tamanhoCelula * i + 60.0, largura * tamanhoCelula, tamanhoCelula * i + 60.0, tamanhoCelula + 60.0);
+            draw.line(tamanhoCelula * i + 60.0, largura * tamanhoCelula, tamanhoCelula * i + 60.0, 60.0);
         }
     }
 
