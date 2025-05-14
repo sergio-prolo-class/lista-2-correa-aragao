@@ -30,5 +30,9 @@ public class App {
 //        tabuleiro.desenharGrade(draw);
 //        draw.show();
 
+        grade.desenharGrade(app.draw);
+        grade.desenharRotulos(app.draw);
+
+
     }
 }
