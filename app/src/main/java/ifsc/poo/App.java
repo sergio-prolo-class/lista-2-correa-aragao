@@ -33,7 +33,7 @@ public class App {
 //        String orientacao = args[3];
 
         Grade grade = new Grade(app.draw);
-        grade.desenharGrade();
+        grade.desenharGrade(app.draw);
 
         Navio navio = new Navio(app.draw, 5);
         navio.desenharNavio(3, 2, true);
