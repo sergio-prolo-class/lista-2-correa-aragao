@@ -17,32 +17,26 @@ public class App {
         this.draw.setCanvasSize(1000, 600);
         this.draw.setXscale(0, 1000);
         this.draw.setYscale(0, 600);
-
     }
 
     // main
     public static void main(String[] args) {
 
-//        /// desenhar grade.
-//        App app = new App();
-//        app.draw.show();
-//
-//        // para entrar com os argumentos para o navio
+        /// desenhar grade.
+        App app = new App();
+        app.draw.show();
+
+        // para entrar com os argumentos para o navio
 //        int tamanho = Integer.parseInt(args[0]); // transformar para inteiro = parseInt
 //        int x = Integer.parseInt(args[1]);
 //        int y = Integer.parseInt(args[2]);
 //        String orientacao = args[3];
-//
-//        Navio navio = new Navio(tamanho, x, y, orientacao);
-//        navio.desenharNavio(draw);
-//
-//        App app = new App();
-//        app.draw.show();
-//
-//        Grade grade = new Grade(app.draw);
-//        grade.desenharGrade(app.draw);
-//        grade.desenharGrade(app.draw);
-//        grade.desenharRotulos(app.draw);
+
+        Grade grade = new Grade(app.draw);
+        grade.desenharGrade();
+
+        Navio navio = new Navio(app.draw, 5);
+        navio.desenharNavio(3, 2, true);
 
 
     }

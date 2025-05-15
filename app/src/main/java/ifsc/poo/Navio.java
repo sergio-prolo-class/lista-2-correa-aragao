@@ -7,8 +7,6 @@ package ifsc.poo;
 import edu.princeton.cs.algs4.Draw;
 
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Navio {
     // lógica
@@ -20,31 +18,27 @@ public class Navio {
     private int tamanhoNavio;
     private int posicaoX; // horizontal
     private int posicaoY; // vertical
-    private String orientacaoNavio;
+    private boolean orientacaoHorizontal; // false: vertical, true: horizontal
 
     // construtor
-    public Navio(Draw desenho, int tamanhoNavio, int posicaoX, int posicaoY, String orientacaoNavio) {
+    public Navio(Draw desenho, int tamanhoNavio) {
         this.desenho = desenho;
         this.tamanhoNavio = tamanhoNavio;
-        this.posicaoX = posicaoX;
-        this.posicaoY = posicaoY;
-        this.orientacaoNavio = orientacaoNavio; // {'Horizontal', 'vertical'};
+////        this.posicaoX = posicaoX; // horizontal
+////        this.posicaoY = posicaoY; // vertical
+//        this.orientacaoHorizontal = orientacaoHorizontal;
     }
 
-    public void desenharNavio(Draw draw){
+    // metodo onde vou desenhar o navio na tela
+    public void desenharNavio(int posicaoX, int posicaoY, boolean orientacaoHorizontal){
         // argumento aqui para passar aqui.
-//        for (int i = 0; i <= tamanhoNavio; i++) {
-//            draw.setPenColor(Color.RED);
-//            if (orientacaoNavio == posicaoX ) {
-//                posicaoX + 1;
-//            }
-//        }
-//        // Vertical
-//        for (int i = 0; i <= tamanhoNavio; i++) {
-//            draw.setPenColor(Color.black);
-//            if (orientacaoNavio == posicaoY) {
-//                posicaoY + 1;
-//            }
-//        }
+        // tamanho de 40 x 40
+
+        for (int i = 0; i <= tamanhoNavio; i++) {
+            this.desenho.setPenColor(Color.RED);
+            if (orientacaoHorizontal) {
+                this.desenho.filledSquare(0.5, 0.5, 1.0);
+            }
+        }
     }
 }
