@@ -33,8 +33,9 @@ public class Navio {
         int x0 = 60;
         int y0 = 60; // é a posição relativa sobre a grade
 
-        int x1 = x0 + (posicaoX * 40);
-        int y1 = y0 + (posicaoY * 40); //
+        int x1 = x0 + (posicaoX * 40) + 20; // 20 pixels à frente, adicionando 20 para desenhar certinho no meio da célula.
+
+        int y1 = y0 + (posicaoY * 40) + 20; //
 
         for (int i = 0; i < tamanhoNavio; i++) {
             this.desenho.setPenColor(Color.RED);
