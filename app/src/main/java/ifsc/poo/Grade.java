@@ -44,7 +44,7 @@ public class Grade {
         draw.setPenColor(Color.BLACK);
         draw.setFont(new Font("Arial", Font.PLAIN, 12));
         for (int i = 0; i < rotulosX.size(); i++) {
-            draw.text(60 + tamanhoCelula / 2 + i * tamanhoCelula, 50, rotulosX.get(i));
+            draw.text(60 + tamanhoCelula / 2 + i * tamanhoCelula, 50, rotulosX.get(i)); // ingridy comentar o código.
         }
         for (int i = 0; i < rotulosY.size(); i++) {
             draw.text(50, 60 + tamanhoCelula / 2 + i * tamanhoCelula, rotulosY.get(i));
