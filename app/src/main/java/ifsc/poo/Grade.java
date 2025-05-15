@@ -38,7 +38,7 @@ public class Grade {
             draw.setPenColor(Color.black);
             draw.line(tamanhoCelula * i + x0, 60.0, tamanhoCelula * i + 60.0, largura * tamanhoCelula + 60.0); // vertical
         }
-        desenharRotulos();
+        desenharRotulos(draw);
     }
 
     public void desenharRotulos(Draw draw) {

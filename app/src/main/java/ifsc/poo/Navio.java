@@ -33,13 +33,15 @@ public class Navio {
         int x0 = 60;
         int y0 = 60; // é a posição relativa sobre a grade
 
-        int x1 = x0 + (posicaoX * 10);
-        int y1 = y0 + (posicaoY * 6); //
+        int x1 = x0 + (posicaoX * 40);
+        int y1 = y0 + (posicaoY * 40); //
 
-        for (int i = 0; i <= tamanhoNavio; i++) {
+        for (int i = 0; i < tamanhoNavio; i++) {
             this.desenho.setPenColor(Color.RED);
             if (orientacaoHorizontal) {
-                this.desenho.filledSquare(x1 + (i * 10), y1, 20.0);
+                this.desenho.filledSquare(x1 + (i * 40), y1, 20.0);
+            } else {
+                this.desenho.filledSquare(x1, y1 + (i * 40), 20.0);
             }
         }
     }
