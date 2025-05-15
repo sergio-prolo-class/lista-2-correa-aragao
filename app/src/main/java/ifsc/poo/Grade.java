@@ -17,7 +17,7 @@ public class Grade {
 
     // construtor
     public Grade(Draw draw) {
-//        this.desenho = desenho;
+        //this.desenho = desenho;
         this.altura = 10;
         this.largura = 10;
         this.rotulosY = new ArrayList<>(Arrays.asList("A", "B", "C", "D", "E", "F", "G", "H", "I", "J")); //asList ->
