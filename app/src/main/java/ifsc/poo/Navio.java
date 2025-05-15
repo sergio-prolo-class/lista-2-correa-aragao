@@ -18,8 +18,8 @@ public class Navio {
 
     private Draw desenho;
     private int tamanhoNavio;
-    private int posicaoX;
-    private int posicaoY;
+    private int posicaoX; // horizontal
+    private int posicaoY; // vertical
     private String orientacaoNavio;
 
     // construtor
@@ -32,15 +32,19 @@ public class Navio {
     }
 
     public void desenharNavio(Draw draw){
-        // argumento aqui.
-        //
-        for (int i = 0; i <= tamanhoNavio; i++) {
-            draw.setPenColor(Color.RED);
-            draw.line(60.0, posicaoNavio * i + 60.0, altura * tamanhoCelula + 60.0, tamanhoCelula * i + 60.0); // horizontal
-        }
-        for (int i = 0; i <= posicaoNavio; i++) {
-            draw.setPenColor(Color.black);
-            draw.line(tamanhoCelula * i + 60.0, 60.0, tamanhoCelula * i + 60.0, largura * tamanhoCelula + 60.0); // vertical
-        }
+        // argumento aqui para passar aqui.
+//        for (int i = 0; i <= tamanhoNavio; i++) {
+//            draw.setPenColor(Color.RED);
+//            if (orientacaoNavio == posicaoX ) {
+//                posicaoX + 1;
+//            }
+//        }
+//        // Vertical
+//        for (int i = 0; i <= tamanhoNavio; i++) {
+//            draw.setPenColor(Color.black);
+//            if (orientacaoNavio == posicaoY) {
+//                posicaoY + 1;
+//            }
+//        }
     }
 }
