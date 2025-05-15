@@ -28,9 +28,11 @@ public class Grade {
     public void desenharGrade(){
         // desenhando todas as linhas e depois todas as colunas
         // adicionar os rotulos (criando outro metodo
+        int x0 = 60;
+        int y0 = 60;
         for (int i = 0; i <= largura; i++) {
             this.desenho.setPenColor(Color.black);
-            desenho.line(60.0, tamanhoCelula * i + 60.0, altura * tamanhoCelula + 60.0, tamanhoCelula * i + 60.0); // horizontal
+            desenho.line(x0, tamanhoCelula * i + y0, altura * tamanhoCelula + x0, tamanhoCelula * i + y0); // horizontal
         }
         for (int i = 0; i <= altura; i++) {
             desenho.setPenColor(Color.black);

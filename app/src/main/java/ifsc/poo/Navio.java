@@ -24,20 +24,22 @@ public class Navio {
     public Navio(Draw desenho, int tamanhoNavio) {
         this.desenho = desenho;
         this.tamanhoNavio = tamanhoNavio;
-////        this.posicaoX = posicaoX; // horizontal
-////        this.posicaoY = posicaoY; // vertical
-//        this.orientacaoHorizontal = orientacaoHorizontal;
     }
 
     // metodo onde vou desenhar o navio na tela
     public void desenharNavio(int posicaoX, int posicaoY, boolean orientacaoHorizontal){
         // argumento aqui para passar aqui.
         // tamanho de 40 x 40
+        int x0 = 60;
+        int y0 = 60; // é a posição relativa sobre a grade
+
+        int x1 = x0 + (posicaoX * 10);
+        int y1 = y0 + (posicaoY * 6); //
 
         for (int i = 0; i <= tamanhoNavio; i++) {
             this.desenho.setPenColor(Color.RED);
             if (orientacaoHorizontal) {
-                this.desenho.filledSquare(0.5, 0.5, 1.0);
+                this.desenho.filledSquare(x1 + (i * 10), y1, 20.0);
             }
         }
     }
