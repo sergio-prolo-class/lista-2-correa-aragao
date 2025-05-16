@@ -1,7 +1,9 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/bK9ZtlsU)
+
 # Lista 2: Modelagem de classes e uso de dependências
 
-**Nomes: Ingridy Aragão e Isabella Corrêa.**
+## **Nomes: Ingridy Aragão e Isabella Corrêa.**
+
+#### Projeto: Este projeto tem como objetivo aplicar conceitos de Programação Orientada a Objetos (POO) através da modelagem de um jogo de batalha naval. O projeto é dividido em etapas que envolvem a criação de uma interface gráfica simples, uma grade de tabuleiro e um navio.
 
 **1 - Dependência e inicialização da aplicação:**
  - Objetivo: Criar um objeto App e faça o seu objeto draw mostrar seu conteúdo.
