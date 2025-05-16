@@ -27,21 +27,24 @@ public class App {
         app.draw.show();
 
         // Grade
-        Grade grade = new Grade(app.draw);
-        Grade gradeInimigo = new Grade(app.draw);
-
-        grade.desenharGrade(60, 60); // grade esquerda
-        gradeInimigo.desenharGrade(540, 60); // grade direita
+        Grade grade = new Grade(60, 60);
+        Grade gradeInimigo = new Grade(540, 60);
 
         // Navios
-        Navio navio = new Navio(app.draw, 5);
-        navio.desenharNavio(2, 1, true);
+        Navio navio1 = new Navio(app.draw, 5);
+        Navio navio2 = new Navio(app.draw, 4);
+        Navio navio3 = new Navio(app.draw, 3);
+        Navio navio4 = new Navio(app.draw, 3);
+        Navio navio5 = new Navio(app.draw, 2);
+        navio1.desenharNavio(3, 2, false);
+        navio2.desenharNavio(0, 0, true);
+        navio3.desenharNavio(7, 5, false);
+        navio4.desenharNavio(5, 1, false);
+        navio5.desenharNavio(1, 8, true);
 
-        // para entrar com os argumentos para o navio
-//        int tamanho = Integer.parseInt(args[0]); // transformar para inteiro = parseInt
-//        int x = Integer.parseInt(args[1]);
-//        int y = Integer.parseInt(args[2]);
-//        String orientacao = args[3];
+        grade.desenharGrade(app.draw); // grade esquerda
+        gradeInimigo.desenharGrade(app.draw); // grade direita
+
 
 
 
