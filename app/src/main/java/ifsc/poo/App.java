@@ -3,12 +3,50 @@
  */
 package ifsc.poo;
 
+// lembrar: Faça comentários nas classes para explicar o que os métodos fazem e o que os atributos significam.
+
+import edu.princeton.cs.algs4.Draw;
+import java.awt.*;
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
+    private Draw draw;
+
+    public App() {
+        this.draw = new Draw();
+        this.draw.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
+        this.draw.setCanvasSize(1000, 600);
+        this.draw.setXscale(0, 1000);
+        this.draw.setYscale(0, 600);
     }
 
+    // main
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        /// desenhar grade.
+        App app = new App();
+        app.draw.show();
+
+        // Grade
+        Grade grade = new Grade(60, 60);
+        Grade gradeInimigo = new Grade(540, 60);
+
+        // Navios
+        Navio navio1 = new Navio(app.draw, 5);
+        Navio navio2 = new Navio(app.draw, 4);
+        Navio navio3 = new Navio(app.draw, 3);
+        Navio navio4 = new Navio(app.draw, 3);
+        Navio navio5 = new Navio(app.draw, 2);
+        navio1.desenharNavio(3, 2, false);
+        navio2.desenharNavio(0, 0, true);
+        navio3.desenharNavio(7, 5, false);
+        navio4.desenharNavio(5, 1, false);
+        navio5.desenharNavio(1, 8, true);
+
+        grade.desenharGrade(app.draw); // grade esquerda
+        gradeInimigo.desenharGrade(app.draw); // grade direita
+
+
+
+
     }
 }
