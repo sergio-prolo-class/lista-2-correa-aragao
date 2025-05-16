@@ -8,12 +8,21 @@
    Assim, ao executar a aplicação, ela deve criar uma janela em branco com as dimensões especificadas, e
    com um botão para fechar.
 
- ![etapa 1](/imagens/etapa%200.JPG)
+    ![etapa 1](/imagens/etapa%200.JPG)
 
 **2 - Grade**
  - Objetivo: Modele uma classe chamada Grade que é de desenhar uma grade do tabuleiro de batalha naval
 
-![etapa 2](/imagens/etapa%201.JPG)
+    ![etapa 2](/imagens/etapa%201.JPG)
 
 **3 - Navio**
- - Objetivo: 
+ - Objetivo: Modele uma classe chamada Navio que é capaz de desenhar um navio em uma grade
+
+    ![etapa 3](/imagens/readm-navio.JPG)
+
+**4 - Imagem do jogo**
+- Objetivo: Use objetos Grade e Navio para criar uma imagem de um jogo de batalha naval, como na Figura 3.
+  Gerar essa imagem deve ser o comportamento padrão da execução da aplicação (resultado de executar
+  ./gradlew run no terminal).
+
+    ![etapa 3](/imagens/final-grade.JPG)
